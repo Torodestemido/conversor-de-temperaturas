@@ -107,4 +107,12 @@ body {
   gap: 30px;
 }
 
+span {
+
+  padding: 5px;
+  display: inline-block;
+  
+}
+
+
 
