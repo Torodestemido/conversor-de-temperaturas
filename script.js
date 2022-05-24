@@ -49,7 +49,13 @@ function resolver () {
   let numero = document.getElementById("numero")
   let K = 273.15
   let F = 32
- 
+
+  
+  if(temp.textContent === "Temperatura Em" && converter.textContent === "Converte Para") {
+    alert("selecione alguma escala :D")
+  }
+
+  
   if(temp.textContent === "Celsius" && converter.textContent === "Celsius") {
     resultado.innerHTML = numero.value
   } 
@@ -63,7 +69,7 @@ function resolver () {
   }
 
   if(temp.textContent === "Kelvin" && converter.textContent === "Kelvin") {
-    resultado.innerHTML = 273.15  
+    resultado.innerHTML = parseInt (K) + parseInt(numero.value) + 'K'
   }
 
   if(temp.textContent === "Celsius" && converter.textContent === "Fahrenheit") {
@@ -83,8 +89,9 @@ function resolver () {
   }
 
   if(temp.textContent === "Kelvin" && converter.textContent === "Fahrenheit") {
-    resultado.innerHTML =  (numero.value - 32) * 5/9 + K
+    resultado.innerHTML  =  (numero.value - 32) * 5/9 + K
   }
- 
-
+  if (resultado.innerHTML === "NaNK"){
+    resultado.textContent = "273.15 "
+  }
 }
