@@ -12,37 +12,37 @@
   <nav>
 
     <div class="home">
-      <input type="text">
+      <input type="number" id="numero">
 
       <ul class="menu">
-        <li><a href="#">Temperatura Em</a>
+        <li><a id="temperatura" href="#">Temperatura Em</a>
           <ul>
-            <li><a href="#">Celsius</a></li>
-            <li><a href="#">Kelvin</a></li>
-            <li><a href="#">fahrenheit</a></li>
+            <li><a id="celsius" href="javascript:escalac()">Celsius</a></li>
+            <li><a id="kelvin" href="javascript:escalak()">Kelvin</a></li>
+            <li><a id="fahrenheit" href="javascript:escalaf()">fahrenheit</a></li>
           </ul>
       </ul>
 
       <ul class="menu3">
-        <button>
+        <button onclick="resolver()" id="solve">
           <img src="/img/arrow_forward_ios_FILL0_wght500_GRAD0_opsz20.svg" alt="">
         </button>
       </ul>
 
       <ul class="menu2">
-        <li><a href="#">Converte Para</a>
+        <li><a id="converter" href="#">Converte Para</a>
           <ul>
-            <li><a href="#">Celsius</a></li>
-            <li><a href="#">Kelvin</a></li>
-            <li><a href="#">fahrenheit</a></li>
+            <li> <a id="celsius" href="javascript:converterc()">Celsius</a> </li>
+            <li> <a id="kelvin" href="javascript:converterk()">Kelvin</a> </li>
+            <li> <a id="fahrenheit" href="javascript:converterf()">fahrenheit</a> </li>
           </ul>
       </ul>
 
-      <span>resultado :</span>
+      <span id="resultado"> resultado : </span>
 
     </div>
   </nav>
-
+  <script src="/script.js"></script>
 </body>
 
 </html>
