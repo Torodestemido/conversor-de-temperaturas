@@ -4,6 +4,9 @@
 }
 
 body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,27,135,1) 38%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(#b4ccb9,#26979f);
   font-family: arial, helvetica, sans-serif;
   font-size: 12px;
   min-height: 100vh;
@@ -14,7 +17,8 @@ body {
 }
 
 .menu {
-  background-color: #23242a;
+  color: #eae2cf;
+  background-color: #333333;
   list-style: none;
   border: 1px solid #c0c0c0;
   float: left;
@@ -23,10 +27,10 @@ body {
 .menu li {
   position: relative;
   float: left;
-  border-right: 1px solid #c0c0c0;
 }
+
 .menu li a {
-  color: red;
+  color:red;
   text-decoration: none;
   padding: 5px 10px;
   display: block;
@@ -34,10 +38,10 @@ body {
 
 .menu li a:hover {
   background: #333;
-  color: #fff;
-  -moz-box-shadow: 0 3px 10px 0 #ccc;
-  -webkit-box-shadow: 0 3px 10px 0 #ccc;
-  text-shadow: 0px 0px 5px #fff;
+  color: #eae2cf;
+  /* -moz-box-shadow: 0 3px 10px 0 #ccc;
+  -webkit-box-shadow: 0 3px 10px 0 #ccc; */
+  /* text-shadow: 0px 0px 5px #fff; */
 }
 .menu li ul {
   position: absolute;
@@ -46,10 +50,12 @@ body {
   background-color: #fff;
   display: none;
 }
+
 .menu li:hover ul,
 .menu li.over ul {
   display: block;
 }
+
 .menu li ul li {
   border: 1px solid #c0c0c0;
   display: block;
@@ -57,18 +63,19 @@ body {
 }
 
 .menu2 {
-  background-color: #23242a;
+  background-color: #333333;
   list-style: none;
   border: 1px solid #c0c0c0;
+ 
   float: left;
 }
 
 .menu2 li {
   position: relative;
   float: left;
-  border-right: 1px solid #c0c0c0;
 }
-.menu2 li a {
+
+.menu2  li a {
   color: red;
   text-decoration: none;
   padding: 5px 10px;
@@ -76,12 +83,14 @@ body {
 }
 
 .menu2 li a:hover {
-  background: #333;
-  color: #fff;
-  -moz-box-shadow: 0 3px 10px 0 #ccc;
+  background: #333333;
+  color: #eae2cf;
+  /* border-radius: 10px 5px 2px 4px; */
+  /* -moz-box-shadow: 0 3px 10px 0 #ccc;
   -webkit-box-shadow: 0 3px 10px 0 #ccc;
-  text-shadow: 0px 0px 5px #fff;
+  text-shadow: 0px 0px 5px #fff; */
 }
+
 .menu2 li ul {
   position: absolute;
   top: 25px;
@@ -89,10 +98,12 @@ body {
   background-color: #fff;
   display: none;
 }
+
 .menu2 li:hover ul,
 .menu2 li.over ul {
   display: block;
 }
+
 .menu2 li ul li {
   border: 1px solid #c0c0c0;
   display: block;
@@ -105,13 +116,28 @@ body {
 }
 
 span {
-
+  font-size: 15px;
   padding: 5px;
   display: inline-block;
   
 }
 input {
-  width: 50px;
+  padding-left: 15px;
+  text-align: center;
+  width: 50px ;
+  border: 0px solid black;
+  border-radius: 20px ;
+  /* background: blue; */
+
+}
+button {
+  background: white;
+  border-radius: 5px;
+  border: 0px solid ;
+}
+img {
+  color: red;
+  margin-top: 2px;
 }
 
 

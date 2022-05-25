@@ -43,13 +43,15 @@ function converterf () {
 
 function resolver () {
   
-  
+
   let resultado = document.getElementById("resultado")
   let converter = document.getElementById("converter")
   let temp = document.getElementById("temperatura")
   let numero = document.getElementById("numero")
   let K = 273.15
   let zero = 0
+
+  
  
 
   //Varialvel de erro se o campo da temperatura e converter estiver vazio
@@ -95,22 +97,22 @@ function resolver () {
     resultado.innerHTML = numero.value + ' C'
   } 
   if(temp.textContent == "Celsius" && converter.textContent == "Kelvin") {
-    resultado.innerHTML = parseInt(numero.value) + K + ' K'  
+    resultado.innerHTML = parseInt(numero.value) + -K + ' K'  
   }
   if(temp.textContent == "Kelvin" && converter.textContent == "Celsius") {
     resultado.innerHTML = parseInt(numero.value) + K + ' K'  
   }
   if(temp.textContent == "Kelvin" && converter.textContent == "Kelvin") {
-    resultado.innerHTML = parseInt(numero.value) + 273.15  + ' K'
+    resultado.innerHTML = parseInt(numero.value)  + ' K'
   }
   if(temp.textContent == "Celsius" && converter.textContent == "Fahrenheit") {
     resultado.innerHTML = ( parseInt(numero.value) * 9/5) + 32 + ' F'
   }
   if(temp.textContent == "Fahrenheit" && converter.textContent == "Celsius") {
-    resultado.innerHTML = ( parseInt(numero.value) * 9/5) + 32 + ' F'
+    resultado.innerHTML = ( parseInt(numero.value) - 32) / 5/9 -17.78 + ' F'
   }
   if(temp.textContent == "Fahrenheit" && converter.textContent == "Fahrenheit") {
-    resultado.innerHTML =  32 + 'F'  
+    resultado.innerHTML =  numero.value + ' F'  
   }
   if(temp.textContent == "Fahrenheit" && converter.textContent == "Kelvin") {
     resultado.innerHTML =  (numero.value - 273.15) * 9/5 + 32 +  ' F'
