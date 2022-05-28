@@ -139,5 +139,12 @@ img {
   color: red;
   margin-top: 2px;
 }
-
-
+/* #temperatura {
+  margin-left: 10%;
+} */
+#numero {
+  margin-left: 10%;
+}
+#resultado {
+  margin-right: 10%;
+}
