@@ -97,7 +97,7 @@ function resolver () {
     resultado.innerHTML = numero.value + ' C'
   } 
   if(temp.textContent == "Celsius" && converter.textContent == "Kelvin") {
-    resultado.innerHTML = parseInt(numero.value) + -K + ' K'  
+    resultado.innerHTML = parseInt(numero.value) + K + ' K'  
   }
   if(temp.textContent == "Kelvin" && converter.textContent == "Celsius") {
     resultado.innerHTML = parseInt(numero.value) + K + ' K'  
